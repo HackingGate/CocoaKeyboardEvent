@@ -23,6 +23,9 @@ class KeyboardView: NSView {
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
+        
+        // Background color
+        self.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
 
         // Drawing code here.        
         self.wantsLayer = true
